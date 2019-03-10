@@ -1,0 +1,31 @@
+package Idades;
+
+import java.util.Scanner;
+
+public class Idade {
+	public static void main(String[] args) {
+		Scanner numero = new Scanner(System.in);
+				int idade;// primeiro declarei a variavel idade para depois recebela
+		
+			System.out.print("digite sua idade: ");
+				idade = numero.nextInt(); 
+			//aqui esta recebendo a variavel int que foi declarada anteriormente
+		
+		Scanner ler = new Scanner(System.in);
+		String nome;// declarando a variavel que vai receber o nome
+		System.out.print("digite seu nome: ");
+		nome = ler.nextLine();
+		System.out.printf("Seu nome é " + nome + "\n");
+		System.out.printf("Sua idade é " + idade + "\n");
+		
+		System.out.println("porfavor digite o seu ano de nascimento");
+		Scanner nascimento = new Scanner(System.in);
+		int ano;
+		ano = nascimento.nextInt();
+		System.out.println("porfavor digite o ano atual");
+		Scanner atual = new Scanner(System.in);
+		int ano2;
+		ano2 = atual.nextInt();
+		System.out.println("o ano des nascimento é:" + "o ano atual é: " + "sua idade é: " + (ano2 - ano));
+	}
+}

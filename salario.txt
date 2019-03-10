@@ -1,0 +1,16 @@
+package salarioalmento;
+
+import java.util.Scanner;
+
+public class SalarioAlmento {
+	public static void main(String[] args) {
+		double valor = 0;
+		double salario = 954;
+		double dividido = 0;
+		System.out.println("a porcentagem do almento: ex 15");
+		Scanner leitor = new Scanner(System.in);
+			valor = leitor.nextInt();
+			dividido = (valor / 100);
+			System.out.println("voce recebe o salario de:" + salario + " o almento que voce vai receber é de : " +(salario * dividido ));		
+	}
+}
